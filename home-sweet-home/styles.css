@@ -1,0 +1,199 @@
+body {
+  background: #ffdd59;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  height: 450px;
+  width: 450px;
+  position: relative;
+}
+.container * {
+  position: absolute;
+}
+
+.house {
+  width: 260px;
+  height: 200px;
+  background: #fff;
+  top: 50%;
+  left: 75px;
+  border-bottom: 20px solid #496074;
+  background: repeating-linear-gradient(red 55px, black 59px);
+}
+.house::before {
+  content: "";
+  position: absolute;
+  top: -105px;
+  left: 33px;
+  height: 183px;
+  width: 183px;
+  background: repeating-linear-gradient(136deg, red 55px, black 59px);
+  transform: rotate(45deg);
+  border-left: 10px solid blue;
+  border-top: 10px solid blue;
+  z-index: -1;
+}
+.sis {
+  width: 40px;
+  height: 90%;
+  background: black;
+  top: -120px;
+  z-index: -3;
+}
+.direk {
+  height: 80%;
+  width: 5px;
+  background: silver;
+  margin-left: 49%;
+  top: -130%;
+  z-index: -4;
+}
+.bayrak {
+  width: 1600%;
+  height: 31%;
+  background: red;
+}
+.house::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 5px;
+  height: 120px;
+  width: 60px;
+  background: brown;
+  z-index: -2;
+}
+.window {
+  top: 35px;
+  left: 25px;
+  height: 80px;
+  width: 70px;
+  background: #496074;
+  border-top: 2px solid silver;
+  border-left: 2px solid silver;
+  border-bottom: 2px solid silver;
+  border-right: 2px solid silver;
+}
+.window2 {
+  width: 70px;
+  height: 60px;
+  background: #496074;
+  top: -70px;
+  left: 100px;
+}
+.wid1 {
+  height: 5px;
+  width: 70px;
+  background: silver;
+  margin: 30px auto;
+}
+.wid2 {
+  height: 4px;
+  width: 60px;
+  background-color: silver;
+  margin-left: 4px;
+  margin-top: 29px;
+  transform: rotate(90deg);
+  overflow: hidden;
+}
+.window::after,
+.window::before {
+  content: "";
+  position: absolute;
+  background: silver;
+}
+
+.window::after {
+  top: 50%;
+  height: 3%;
+  width: 70px;
+}
+.window::before {
+  top: 0%;
+  left: 46%;
+  height: 100%;
+  width: 4px;
+}
+.door {
+  top: 60px;
+  left: 170px;
+  height: 130px;
+  width: 60px;
+  background: repeating-linear-gradient(
+      #332c25,
+      #3e362e 3%,
+      transparent 25%,
+      transparent 30%
+    ),
+    repeating-linear-gradient(
+      90deg,
+      #91653b,
+      #6a5139 12%,
+      #f5efe6 6%,
+      #f5efe6 44%
+    );
+}
+.door::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  height: 8px;
+  width: 5px;
+  border-radius: 50px;
+  background: red;
+  border: 2px solid #fff;
+}
+.door:hover {
+  color: black;
+  cursor: pointer;
+  background: #4c0033;
+}
+.stairs-a {
+  width: 60px;
+  height: 10px;
+  background: silver;
+  border-radius: 10%;
+  margin: 10px;
+  margin-top: 65%;
+  top: 70%;
+  left: -10px;
+}
+.stairs-b {
+  width: 70px;
+  height: 10px;
+  background: silver;
+  border-radius: 10%;
+  margin: 80px;
+  margin-top: 80%;
+  top: 70%;
+  left: -85px;
+}
+.stairs-c {
+  width: 90px;
+  height: 14px;
+  background: silver;
+  border-radius: 10%;
+  margin: 80px;
+  margin-top: 80%;
+  top: 75%;
+  left: -95px;
+}
+.bx {
+  width: 1px;
+  height: 2px;
+  color: white;
+  margin: 10px 40px;
+}
+.moon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  box-shadow: 10px 10px 0 0 #fff;
+  transform: rotate(90deg);
+  margin-left: 35px;
+  font-size: 12px;
+}
